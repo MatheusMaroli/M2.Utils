@@ -13,12 +13,14 @@ namespace M2.Utils.Validators
 
         public bool IsValid()
         {
-            _zipeCode = _zipeCode.Replace(".", "");
-            _zipeCode = _zipeCode.Replace("-", "");
-            _zipeCode = _zipeCode.Replace(" ", "");
+            var zipToValidate = _zipeCode.Replace(".", "");
+            zipToValidate = zipToValidate.Replace("-", "");
+            zipToValidate = zipToValidate.Replace(" ", "");
+
+            if(zipToValidate == "00000000")     return false;
 
             Regex Rgx = new Regex(@"^\d{8}$");
-            if (!Rgx.IsMatch(_zipeCode))
+            if (!Rgx.IsMatch(zipToValidate))
                 return false;
 
             return true;
