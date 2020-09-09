@@ -6,7 +6,7 @@ namespace M2.Utils.Test.Validator
     {
         [Fact]
         public void Should_Be_Cpf_Valid(){
-            var cpf = "10195080947";
+            var cpf = "101.950.809-47";
             var resultExcept = true;
             var cpfValidator = new M2.Utils.Validators.Cpf(cpf);
             Assert.Equal(resultExcept, cpfValidator.IsValid());    
@@ -14,7 +14,7 @@ namespace M2.Utils.Test.Validator
 
         [Fact]
         public void Should_Be_Cpf_Invalid(){
-            var cpf = "10195080900";
+            var cpf = "000.000.000-00";
             var resultExcept = false;
             var cpfValidator = new M2.Utils.Validators.Cpf(cpf);
             Assert.Equal(resultExcept, cpfValidator.IsValid());    
