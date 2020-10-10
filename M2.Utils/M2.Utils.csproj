@@ -1,7 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+
     <TargetFramework>netstandard2.0</TargetFramework>
+
+    <PackageId>M2.Utils</PackageId>
+    <Version>0.0.3</Version>
+    <Authors>Matheus M</Authors>
+    <Company>Matheus Maroli</Company>
   </PropertyGroup>
 
 </Project>
