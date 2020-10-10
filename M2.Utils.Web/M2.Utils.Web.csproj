@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    
+  
+    <PackageId>M2.Utils.Web</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>Matheus Maroli</Authors>
+    <Company>Matheus Maroli</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+</Project>

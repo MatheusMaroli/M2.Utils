@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\M2.Utils\M2.Utils.csproj" />
+    <ProjectReference Include="..\M2.Utils.Web\M2.Utils.Web.csproj" />
   </ItemGroup>
 
 </Project>
