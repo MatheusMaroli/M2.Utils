@@ -5,7 +5,7 @@
     
   
     <PackageId>M2.Utils.Web</PackageId>
-    <Version>0.0.1</Version>
+    <Version>0.0.6</Version>
     <Authors>Matheus Maroli</Authors>
     <Company>Matheus Maroli</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>

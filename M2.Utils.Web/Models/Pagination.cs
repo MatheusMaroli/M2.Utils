@@ -16,6 +16,9 @@ namespace M2.Utils.Web.Models
             return ((pagina - 1) * ItemsForPage);
         }
 
+        public bool IsValid() => ((CurrentPage > 0) && (ItemsForPage > 0));
+
+        
         public IEnumerable<T> ExecutePagination<T>(IEnumerable<T> data) where T: class
         {
             TotalItems = data.Count();
