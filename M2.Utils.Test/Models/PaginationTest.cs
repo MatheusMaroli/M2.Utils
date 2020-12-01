@@ -1,12 +1,10 @@
 using System.Collections.Generic;
 using Xunit;
 using System.Linq;
-using M2.Utils.Web.Models;
+using M2.Utils.Models;
 
-namespace M2.Utils.Test.Web
+namespace M2.Utils.Test.Models
 {
-
-
     public class PaginationTest
     {
         private class TestPalidation
@@ -31,7 +29,7 @@ namespace M2.Utils.Test.Web
             items.Add(new TestPalidation() { Id = 10 });
 
             IEnumerable<TestPalidation> listPaginated;
-            var pagination = new M2.Utils.Web.Models.Pagination();
+            var pagination = new Pagination();
             pagination.ItemsForPage = 2;
 
             for (var currentPage = 1; currentPage <= 5; currentPage++)

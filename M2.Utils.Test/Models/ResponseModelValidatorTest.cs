@@ -1,10 +1,11 @@
-﻿using M2.Utils.Web.Responses;
+﻿
+using M2.Utils.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using Xunit;
 
-namespace M2.Utils.Test.Web
+namespace M2.Utils.Test.Models
 {
     public class ResponseModelValidatorTest
     {

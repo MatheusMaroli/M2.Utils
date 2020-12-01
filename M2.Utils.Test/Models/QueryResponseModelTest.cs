@@ -1,10 +1,11 @@
-﻿using System;
+﻿using M2.Utils.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Xunit;
 
-namespace M2.Utils.Test.Web
+namespace M2.Utils.Test.Models
 {
     public  class QueryResponseModelTest
     {
@@ -32,7 +33,7 @@ namespace M2.Utils.Test.Web
                 collection.Add(new DataCollection() { Id = 10 });
 
 
-                var queryResponse = new Utils.Web.Responses.QueryResponseModel();
+                var queryResponse = new QueryResponseModel();
                 queryResponse.Data = collection.Select(c => new { Id = c.Id });
                 Assert.True(queryResponse.Data.Count() == 10);
             }
