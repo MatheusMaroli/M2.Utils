@@ -4,7 +4,7 @@
 
     <TargetFramework>netstandard2.0</TargetFramework>
      <PackageId>M2.Utils</PackageId>
-     <Version>0.0.1</Version>
+     <Version>0.0.7</Version>
      <Authors>Matheus Maroli</Authors>
      <Company>Matheus Maroli</Company>
      <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
