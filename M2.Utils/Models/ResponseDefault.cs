@@ -8,7 +8,8 @@ namespace M2.Utils.Models
 
         private bool _isDefaultValues;
         public IList<string> Messages {get;set;}
-        public ResponseState Status   {get; private set;}
+        public IList<ErrorMessage> ValidatorMessages { get; set; } = new List<ErrorMessage>();
+        public ResponseState Status {get; private set;}
         public object Body {get;set;}
         public bool IsValidResponse() => Status == ResponseState.Success;
         
@@ -70,6 +71,12 @@ namespace M2.Utils.Models
             ClearMessageOnNewState(ResponseState.Success);
             Status = ResponseState.Success;
             Messages.Add(msg);
+        }
+
+        public void SetValidatorMessage(string propertyName, string message)
+        {
+            ValidatorMessages.Add(new ErrorMessage { PropertyName = propertyName, Message = message });
+            Status = ResponseState.Warning;
         }
 /*
         public void SetErrorSuporteTecnico()
